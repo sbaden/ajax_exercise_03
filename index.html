@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="nav">
+		<!-- <input type="button" name="button" id="getDataButton" value="Get Consumer Finance Data"> -->
+
+		<input type="text" id="movieSearch">
+
+		<input type="button" name="button" id="getMovieData" value="Get Movie Data">	
+	</div>
+
+	<script id="movie-template" type="text/x-handlebars-template">
+		<div id="movie-wrapper">
+			<img id="poster" src="{{poster}}">
+
+			<h1>Title: {{title}}</h1>
+			<h2>Year: {{year}}</h2>
+			<a href={{imdb}}>IMDB</a>
+			
+		</div>
+		<hr>
+	</script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script src="main.js" type="text/javascript" charset="utf-8" async defer></script>
+
+</body>
+</html>
